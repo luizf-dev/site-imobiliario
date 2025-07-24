@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
+
+
+
+#Algumas hospedagens podem exigir que você use a diretiva RewriteBase.
+#Se você precisar usar a diretiva RewriteBase,
+#ela deve ser o caminho físico absoluto para o diretório que contém este arquivo htaccess.
